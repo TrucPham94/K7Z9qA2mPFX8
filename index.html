@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday Duyên</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Dancing+Script:wght@400;500;600&display=swap&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg1: #fdfcfb;
+        --bg2: #e6f3f0;
+        --ink: #1f2d2b;
+        --muted: #7a8f8a;
+        --accent: #5fb3a2;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: "Inter", system-ui, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+        background: linear-gradient(180deg, var(--bg1), var(--bg2));
+        color: var(--ink);
+        overflow: hidden;
+      }
+      .story {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+      }
+      .slide {
+        min-width: 100vw;
+        height: 100vh;
+        scroll-snap-align: start;
+        display: grid;
+        place-items: center;
+        padding: 24px;
+      }
+      .card {
+        width: 100%;
+        max-width: 360px;
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(8px);
+        border-radius: 28px;
+        padding: 32px 26px 36px;
+        box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+        text-align: center;
+      }
+      .tag {
+        display: inline-block;
+        padding: 6px 14px;
+        border-radius: 999px;
+        background: rgba(95, 179, 162, 0.15);
+        color: var(--accent);
+        font-weight: 600;
+        font-size: 0.8rem;
+        margin-bottom: 18px;
+      }
+      h1 {
+        font-family: "Dancing Script", "Segoe Script", cursive;
+        font-size: 2.3rem;
+        font-weight: 400;
+        margin: 0 0 10px;
+        letter-spacing: 0.02em;
+      }
+      .date {
+        font-size: 0.85rem;
+        color: var(--muted);
+        margin-bottom: 20px;
+      }
+      p {
+        font-family: "Dancing Script", "Segoe Script", cursive;
+        font-size: 1.05rem;
+        line-height: 1.7;
+        color: var(--muted);
+        margin: 0;
+      }
+      .emoji {
+        font-size: 56px;
+        margin-bottom: 20px;
+      }
+      .hint {
+        position: absolute;
+        bottom: 24px;
+        width: 100%;
+        text-align: center;
+        font-size: 0.75rem;
+        color: var(--muted);
+        letter-spacing: 0.12em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="story">
+      <!-- Slide 1 -->
+      <section class="slide">
+        <div class="card">
+          <div class="emoji">🎂</div>
+          <div class="tag">Happy Birthday</div>
+          <h1>Mỹ Duyên</h1>
+          <div class="date">12 · 12 · 2025</div>
+          <p>Một ngày rất đặc biệt 💚</p>
+        </div>
+        <div class="hint">SWIPE →</div>
+      </section>
+
+      <!-- Slide 2 -->
+      <section class="slide">
+        <div class="card">
+          <div class="emoji">✨</div>
+          <p>
+            Chúc Em luôn vui vẻ,<br />
+            nhẹ nhàng với chính mình,<br />
+            và gặp thật nhiều điều dễ thương mỗi ngày.
+          </p>
+        </div>
+      </section>
+
+      <!-- Slide 3 -->
+      <section class="slide">
+        <div class="card">
+          <div class="emoji">💫</div>
+          <p>
+            Tuổi mới,<br />
+            mong mọi điều Em theo đuổi<br />
+            đều đi đúng hướng.
+          </p>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
